@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sf1-l5-DXf">
+                                <rect key="frame" x="20" y="29" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="dismissKeyBoardBtn:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="2VT-aN-x3K"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5w-eK-jCM">
+                                <rect key="frame" x="20" y="370" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRd-dX-ZgM"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingdomtower.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="grs-vX-OWR">
+                                <rect key="frame" x="20" y="74" width="560" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="UHo-8U-YNK"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftx-sA-8JL">
+                                <rect key="frame" x="20" y="415" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Library"/>
+                                <connections>
+                                    <action selector="libraryBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sgD-Ff-Dqp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke1-aL-7c6">
+                                <rect key="frame" x="20" y="460" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Facebook"/>
+                                <connections>
+                                    <action selector="fbBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GKv-ZJ-uG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNK-Ye-EGQ">
+                                <rect key="frame" x="20" y="505" width="560" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Twitter"/>
+                                <connections>
+                                    <action selector="twitterBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FFM-Qe-nLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="ftx-sA-8JL" secondAttribute="leading" id="3do-zU-oT6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ke1-aL-7c6" secondAttribute="trailing" id="6Kt-St-Xy3"/>
+                            <constraint firstItem="D5w-eK-jCM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bh-Eo-sWT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sf1-l5-DXf" secondAttribute="trailing" id="8NV-vv-Mag"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="grs-vX-OWR" secondAttribute="leading" id="CNJ-Xw-fdS"/>
+                            <constraint firstItem="WNK-Ye-EGQ" firstAttribute="top" secondItem="ke1-aL-7c6" secondAttribute="bottom" constant="15" id="Cc8-wm-NRJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ftx-sA-8JL" secondAttribute="trailing" id="EnS-yr-RaQ"/>
+                            <constraint firstItem="grs-vX-OWR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXm-Ot-lvp"/>
+                            <constraint firstItem="sf1-l5-DXf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="9" id="IkA-kK-oWm"/>
+                            <constraint firstItem="ftx-sA-8JL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RsL-xH-1Bi"/>
+                            <constraint firstItem="ftx-sA-8JL" firstAttribute="top" secondItem="D5w-eK-jCM" secondAttribute="bottom" constant="15" id="VSO-Ga-mG2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D5w-eK-jCM" secondAttribute="trailing" id="ZbO-Eu-aDM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="D5w-eK-jCM" secondAttribute="leading" id="eas-PF-bPe"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="sf1-l5-DXf" secondAttribute="leading" id="evb-KP-55j"/>
+                            <constraint firstItem="sf1-l5-DXf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPD-lz-A8Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="grs-vX-OWR" secondAttribute="trailing" id="fmQ-Mj-bQu"/>
+                            <constraint firstItem="D5w-eK-jCM" firstAttribute="top" secondItem="grs-vX-OWR" secondAttribute="bottom" constant="22" id="gJV-qQ-7qW"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="WNK-Ye-EGQ" secondAttribute="leading" id="ia6-ro-wBd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WNK-Ye-EGQ" secondAttribute="trailing" id="jCO-qn-RoT"/>
+                            <constraint firstItem="WNK-Ye-EGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n3m-2T-bMW"/>
+                            <constraint firstItem="grs-vX-OWR" firstAttribute="top" secondItem="sf1-l5-DXf" secondAttribute="bottom" constant="15" id="uRZ-IE-3w1"/>
+                            <constraint firstItem="ke1-aL-7c6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vT0-jL-juD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ke1-aL-7c6" secondAttribute="leading" id="vt8-hj-Xsn"/>
+                            <constraint firstItem="ke1-aL-7c6" firstAttribute="top" secondItem="ftx-sA-8JL" secondAttribute="bottom" constant="15" id="yM3-6G-jb5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="grs-vX-OWR" id="syh-vU-iTp"/>
+                        <outlet property="txtFld" destination="sf1-l5-DXf" id="mO1-3K-juN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kingdomtower.jpg" width="800" height="550"/>
+    </resources>
+</document>
